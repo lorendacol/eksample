@@ -8,12 +8,12 @@
     --primary: #2c3e50;
     --secondary: #c9a55a;
     --accent: #1a1a1a;
-    --light: #f8f9fa;
+    --light: #a3b4c5;
     --text: #333;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: var(--light);
     color: var(--text);
     line-height: 1.6;
@@ -53,9 +53,10 @@ body {
 
 .name {
     font-size: 2.5em;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
 }
 
 .title {
@@ -78,11 +79,13 @@ body {
 
 /* Navigation */
 nav {
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background: linear-gradient(135deg, #1a252f 0%, #2c3e50 50%, #eef0f3 100%);
+    box-shadow: 0 4px 20px rgba(168, 159, 159, 0.15);
     position: sticky;
     top: 0;
     z-index: 100;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(201, 165, 90, 0.2);
 }
 
 nav ul {
@@ -90,30 +93,38 @@ nav ul {
     justify-content: center;
     gap: 50px;
     list-style: none;
-    padding: 20px 0;
+    padding: 25px 0;
 }
 
 nav a {
-    color: var(--text);
+    color: #ffffff;
     text-decoration: none;
     font-weight: 500;
+    font-size: 0.9em;
     position: relative;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav a::after {
     content: '';
     position: absolute;
-    bottom: -5px;
-    left: 0;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0;
-    height: 2px;
+    height: 3px;
     background: var(--secondary);
-    transition: width 0.3s;
+    transition: width 0.3s ease;
+    border-radius: 2px;
+    box-shadow: 0 0 10px var(--secondary);
 }
 
 nav a:hover {
     color: var(--secondary);
+    transform: translateY(-2px);
 }
 
 nav a:hover::after {
@@ -138,13 +149,15 @@ section {
 section:nth-child(2) { animation-delay: 0.2s; }
 section:nth-child(3) { animation-delay: 0.4s; }
 section:nth-child(4) { animation-delay: 0.6s; }
+section:nth-child(5) { animation-delay: 0.8s; }
 
 .section-title {
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 600;
     margin-bottom: 50px;
     position: relative;
     display: inline-block;
+    font-family: 'Playfair Display', serif;
 }
 
 .section-title::after {
@@ -155,6 +168,67 @@ section:nth-child(4) { animation-delay: 0.6s; }
     width: 60px;
     height: 3px;
     background: var(--secondary);
+}
+
+/* About Me */
+.about-content {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.about-image-container {
+    position: sticky;
+    top: 100px;
+}
+
+.about-image {
+    width: 450px;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-image::before {
+    content: '';
+    font-size: 6em;
+    opacity: 0.3;
+    position: absolute;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-text {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.about-intro {
+    font-size: 1.3em;
+    color: var(--primary);
+    margin-bottom: 25px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.about-description {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #555;
 }
 
 /* Skills */
@@ -302,7 +376,7 @@ section:nth-child(4) { animation-delay: 0.6s; }
     }
 
     nav a {
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
 
     section {
@@ -316,5 +390,21 @@ section:nth-child(4) { animation-delay: 0.6s; }
     .contact-info {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image-container {
+        position: relative;
+        top: 0;
+    }
+
+    .about-image {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
     }
 }

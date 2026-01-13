@@ -1,4 +1,4 @@
-// Smooth scrolling for navigation links
+
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -8,7 +8,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// Intersection Observer for scroll animations
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'

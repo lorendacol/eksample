@@ -3,34 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Portfolio</title>
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Info Bar -->
+   
     <div class="info-bar">
         <div class="container">
             <div class="info-content">
-                <h1 class="name">Your Name</h1>
+                <h1 class="name">Loren M. Dacol</h1>
                 <p class="title">Creative Professional | Designer | Developer</p>
                 <div class="contact-info">
-                    <span>📧 your.email@example.com</span>
-                    <span>📱 +63 123 456 7890</span>
-                    <span>📍 Davao, Philippines</span>
-                    <span>🔗 linkedin.com/in/yourname</span>
+                    <span>📧 dacolloren@example.com</span>
+                    <span>📱+63 906 733 4483</span>
+                    <span>📍Vista Villa, Bukidnon, Philippines</span>
+                    <span>🔗 https://github.com/lorendacol</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Navigation -->
+  
     <nav>
         <ul>
+            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#seminars">Seminars</a></li>
         </ul>
     </nav>
+
+   
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image-container">
+                    <div class="about-image">
+                        <img src="loray.jpg" alt="Your Name - Profile Picture">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-intro">
+                        Hello! I’m a beginner in design and development based in Vista Villa, Bukidnon, Philippines. I’m eager to learn and improve my skills while creating simple, functional, and visually pleasing digital experiences.
+                    </p>
+                    <p class="about-description">
+                        I have a basic background in Computer Science and am currently learning UI/UX design and web development. I enjoy solving simple problems and building clean, easy-to-use designs while continuing to grow my technical and creative skills.
+                    </p>
+                    <p class="about-description">
+                       When I’m not coding or designing, I like exploring new technologies, practicing my skills, and learning from others. I’m always open to new challenges that help me grow and improve.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Skills Section -->
     <section id="skills">
@@ -40,9 +70,7 @@
                 <div class="skill-card">
                     <div class="skill-category">Design</div>
                     <ul class="skill-list">
-                        <li>UI/UX Design</li>
-                        <li>Graphic Design</li>
-                        <li>Adobe Creative Suite</li>
+                        <li>UI/UX Design</li>        
                         <li>Figma</li>
                         <li>Prototyping</li>
                     </ul>
@@ -51,8 +79,6 @@
                     <div class="skill-category">Development</div>
                     <ul class="skill-list">
                         <li>HTML/CSS/JavaScript</li>
-                        <li>React</li>
-                        <li>Responsive Design</li>
                         <li>Git/GitHub</li>
                         <li>Web Performance</li>
                     </ul>
@@ -77,62 +103,77 @@
             <h2 class="section-title">Education</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-year">2020 - 2024</div>
-                    <div class="timeline-title">Bachelor of Science in Computer Science</div>
-                    <div class="timeline-subtitle">University Name, Davao City</div>
+                    <div class="timeline-year">2022 - 2026</div>
+                    <div class="timeline-title">Bachelor of Science in Information Technology</div>
+                    <div class="timeline-subtitle">Northern Bukidnon State College</div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-year">2018 - 2020</div>
-                    <div class="timeline-title">Senior High School - STEM</div>
-                    <div class="timeline-subtitle">School Name, Davao City</div>
+                    <div class="timeline-year">2020 - 2022</div>
+                    <div class="timeline-title">Senior High School - Humanities and Social Sciences</div>
+                    <div class="timeline-subtitle">Sumilao National Highschool - Vista Villa Annex</div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-year">2024</div>
-                    <div class="timeline-title">Web Development Certification</div>
-                    <div class="timeline-subtitle">Online Platform</div>
+                    <div class="timeline-year">2016 - 2020</div>
+                    <div class="timeline-title"> Junior High School</div>
+                    <div class="timeline-subtitle">Sumilao National Highschool - Vista Villa Annex</div>
                 </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2016</div>
+                    <div class="timeline-title"> Elementary School</div>
+                    <div class="timeline-subtitle">Vista Villa Elementary School</div>
+                </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- Seminars Section -->
     <section id="seminars">
-        <div class="container">
-            <h2 class="section-title">Seminars & Workshops</h2>
-            <div class="seminars-grid">
-                <div class="seminar-card">
-                    <div class="seminar-title">Modern Web Design Trends</div>
-                    <div class="seminar-date">January 2025</div>
-                    <div class="seminar-organizer">Tech Conference PH</div>
-                </div>
-                <div class="seminar-card">
-                    <div class="seminar-title">UX/UI Best Practices Workshop</div>
-                    <div class="seminar-date">November 2024</div>
-                    <div class="seminar-organizer">Design Summit</div>
-                </div>
-                <div class="seminar-card">
-                    <div class="seminar-title">JavaScript Advanced Techniques</div>
-                    <div class="seminar-date">September 2024</div>
-                    <div class="seminar-organizer">Dev Community Davao</div>
-                </div>
-                <div class="seminar-card">
-                    <div class="seminar-title">Digital Marketing Essentials</div>
-                    <div class="seminar-date">July 2024</div>
-                    <div class="seminar-organizer">Marketing Hub PH</div>
-                </div>
-                <div class="seminar-card">
-                    <div class="seminar-title">Creative Problem Solving</div>
-                    <div class="seminar-date">May 2024</div>
-                    <div class="seminar-organizer">Innovation Center</div>
-                </div>
-                <div class="seminar-card">
-                    <div class="seminar-title">Project Management Fundamentals</div>
-                    <div class="seminar-date">March 2024</div>
-                    <div class="seminar-organizer">PMI Philippines</div>
-                </div>
+    <div class="container">
+        <h2 class="section-title">Seminars & Workshops</h2>
+        <div class="seminars-grid">
+
+            <div class="seminar-card">
+                <div class="seminar-title">Web Development (Good Coding & Implementation)</div>
+                <div class="seminar-date">August 29, 2025</div>
+                <div class="seminar-organizer">Webinar Session via Google Meet</div>
             </div>
+
+            <div class="seminar-card">
+                <div class="seminar-title">Basic Embedded Systems</div>
+                <div class="seminar-date">August 30, 2025</div>
+                <div class="seminar-organizer">Webinar Session via Zoom</div>
+            </div>
+
+            <div class="seminar-card">
+                <div class="seminar-title">
+                    TECH SAVY CODE CAMP 2025: Road to Full Stack Development<br>
+                    <small>Season 3 – Frontend Development</small>
+                </div>
+                <div class="seminar-date">August 30, 2025</div>
+                <div class="seminar-organizer">Webinar Session via Zoom</div>
+            </div>
+
+            <div class="seminar-card">
+                <div class="seminar-title">Hour of Code (AI Ready ASEAN Programming)</div>
+                <div class="seminar-date">September 06, 2025</div>
+                <div class="seminar-organizer">Webinar Session via Zoom</div>
+            </div>
+
+            <div class="seminar-card">
+                <div class="seminar-title">Data Privacy Awareness Session</div>
+                <div class="seminar-date">September 12, 2025</div>
+                <div class="seminar-organizer">Webinar Session via Zoom</div>
+            </div>
+
+            <div class="seminar-card">
+                <div class="seminar-title">Cyber Hygiene Training (APAC Cybersecurity)</div>
+                <div class="seminar-date">October 17, 2025</div>
+                <div class="seminar-organizer">Northern Bukidnon State College</div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <script src="script.js"></script>
 </body>
